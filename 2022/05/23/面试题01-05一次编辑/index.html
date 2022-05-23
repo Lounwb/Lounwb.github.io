@@ -4,10 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="关于, HTML,CSS,JavaScript,JQuery,React">
-    <meta name="description" content="这是我的第一篇博客
-怎么去修改内容呢？
-">
+    <meta name="keywords" content="面试题01.05一次编辑, HTML,CSS,JavaScript,JQuery,React">
+    <meta name="description" content="
+解题思路首先我们需要明确一次编辑导致的情况：  插入或删除会使—字符串长度与原来相差 1 
+  替换会导致—字符串长度与原来相等
+那么两个字符串但凡长度相差超过1说明编辑次数必然超过2 所以直接返回false
+比较两个字符串相等很自然想到">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>关于 | Lounwb</title>
+    <title>面试题01.05一次编辑 | Lounwb</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -248,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">about</h1>
+                    <h1 class="description center-align post-title">面试题01.05一次编辑</h1>
                 </div>
             </div>
         </div>
@@ -381,7 +383,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-22
+                    2022-05-23
                 </div>
                 
 
@@ -407,8 +409,27 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这是我的第一篇博客</p>
-<p>怎么去修改内容呢？</p>
+                <p><img src="C:\Users\19043\Desktop\img0.png" alt="img0"></p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><h4 id="首先我们需要明确一次编辑导致的情况："><a href="#首先我们需要明确一次编辑导致的情况：" class="headerlink" title="首先我们需要明确一次编辑导致的情况："></a>首先我们需要明确一次编辑导致的情况：</h4><p>  插入或删除会使—字符串长度与原来相差 1 </p>
+<p>  替换会导致—字符串长度与原来相等</p>
+<p>那么两个字符串但凡长度相差超过1说明编辑次数必然超过2 所以直接返回false</p>
+<p>比较两个字符串相等很自然想到用双指针，这里我们用用到了指针p和指针q;</p>
+<h5 id="1-长度不相等"><a href="#1-长度不相等" class="headerlink" title="1.长度不相等"></a>1.长度不相等</h5><p> 1)first.length() &gt; second.length();</p>
+<pre><code>  如果为一次操作，说明这是删除操作
+</code></pre>
+<p>​	  删除操作如果不发生在尾部必然会导致数组的偏移导致不对等，所以我们在遇到第一个不相等的字符的时候让</p>
+<p>  first指针p向后位移一位,然后继续比较即可.</p>
+<p> 2)second.length() &gt; first.length();</p>
+<p>   与1)的情况是一样的，我们可以把 first与second交换一下 让second变成first first变成second，那么我们</p>
+<p>​    就可以复用1)的代码了</p>
+<p><img src="https://pic.leetcode-cn.com/1652409434-MGkAOj-QQ%E6%88%AA%E5%9B%BE20220513103545.png" alt="QQ截图20220513103545.png"></p>
+<h5 id="2-长度相等"><a href="#2-长度相等" class="headerlink" title="2.长度相等"></a>2.长度相等</h5><p>​	  替换操作.</p>
+<p>​    那么我们只需要比较两个字符串对应位置不相等字符串的个数即可，如果不相等的字符超过1说明替换操作发生</p>
+<p>  不止一次.(我这里只是完全遍历了一遍，后续我可能会在优化，因为只需要跳过第一个不相等的字符进行比较就行)</p>
+<p>  <em><strong>*!!改了后发现用跳过第一个字符后在比较不如直接完全遍历一次然后再判断的效率高。*</strong></em></p>
+<p><img src="https://pic.leetcode-cn.com/1652409439-wMJogJ-QQ%E6%88%AA%E5%9B%BE20220513103655.png" alt="QQ截图20220513103655.png"></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">oneEditAway</span><span class="params">(String first, String second)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(Math.abs(first.length()-second.length()) &gt; <span class="number">1</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">char</span>[] firstChar = first.toCharArray();</span><br><span class="line">        <span class="type">char</span>[] secondChar = second.toCharArray();</span><br><span class="line">        <span class="type">int</span> p=<span class="number">0</span>,q=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> <span class="variable">count</span> <span class="operator">=</span><span class="number">0</span>;</span><br><span class="line">        <span class="keyword">if</span>(first.length() == second.length()) &#123;</span><br><span class="line">            <span class="comment">//O(n)</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; first.length(); i++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (firstChar[i] != secondChar[i]) &#123;</span><br><span class="line">                    count++;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> count &lt;= <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(second.length() &gt; first.length()) &#123;</span><br><span class="line">            firstChar = second.toCharArray();</span><br><span class="line">            secondChar = first.toCharArray();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span>(p&lt;firstChar.length &amp;&amp; q&lt; secondChar.length)&#123;</span><br><span class="line">            <span class="keyword">if</span>(firstChar[p] != secondChar[q] &amp;&amp; count ==<span class="number">0</span>)&#123;</span><br><span class="line">                p++;</span><br><span class="line">                count++;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(firstChar[p] != secondChar[q])&#123;</span><br><span class="line">                count++;</span><br><span class="line">            &#125;</span><br><span class="line">            p++;</span><br><span class="line">            q++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> count &lt;= <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 
                 
             </div>
@@ -435,7 +456,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://lounwb.github.io/2022/05/22/about/">http://lounwb.github.io/2022/05/22/about/</a>
+                    <a href="http://lounwb.github.io/2022/05/23/%E9%9D%A2%E8%AF%95%E9%A2%9801-05%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91/">http://lounwb.github.io/2022/05/23/%E9%9D%A2%E8%AF%95%E9%A2%9801-05%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -513,17 +534,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/05/22/page/">
+                <a href="/2022/05/23/%E9%9D%A2%E8%AF%95%E9%A2%9801-05%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="page">
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="面试题01.05一次编辑">
                         
-                        <span class="card-title">page</span>
+                        <span class="card-title">面试题01.05一次编辑</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -533,9 +555,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-22
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-23
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -544,6 +566,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -554,13 +577,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/22/hello-world/">
+                <a href="/2022/05/22/page/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="page">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">page</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
