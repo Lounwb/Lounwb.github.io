@@ -4,9 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="953-验证外星语词典, HTML,CSS,JavaScript,JQuery,React">
-    <meta name="description" content="题目：验证外星语词典难度：简单
-  某种外星语也使用英文小写字母，但可能顺序 order 不同。字母表的顺序（order）是一些小写字母的排列。给定一组用外星语书写的单词 words，以及其字母表的顺序 order，只有当给定的单词在这种外">
+    <meta name="keywords" content="101.对称二叉树, HTML,CSS,JavaScript,JQuery,React">
+    <meta name="description" content="题目：101. 对称二叉树难度：简单
+  给你一个二叉树的根节点 root ， 检查它是否轴对
+示例 1:
+
+输入：root = [1,2,2,3,4,4,3]
+输出：true
+
+示例 2:
+
+输入：root = [1,2,2,null,3">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +26,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>953-验证外星语词典 | Lounwb</title>
+    <title>101.对称二叉树 | Lounwb</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -247,12 +255,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('https://s3.bmp.ovh/imgs/2022/05/23/69b5043ca1686988.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s3.bmp.ovh/imgs/2022/05/23/f96fad9b05b87f79.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">953-验证外星语词典</h1>
+                    <h1 class="description center-align post-title">101.对称二叉树</h1>
                 </div>
             </div>
         </div>
@@ -372,12 +380,12 @@
                                 <span class="chip bg-color">力扣每日一题</span>
                             </a>
                         
-                            <a href="/tags/%E6%95%B0%E7%BB%84/">
-                                <span class="chip bg-color">数组</span>
+                            <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+                                <span class="chip bg-color">二叉树</span>
                             </a>
                         
-                            <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                                <span class="chip bg-color">字符串</span>
+                            <a href="/tags/%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86/">
+                                <span class="chip bg-color">先序遍历</span>
                             </a>
                         
                     </div>
@@ -392,7 +400,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-17
+                    2022-05-10
                 </div>
                 
 
@@ -421,64 +429,68 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="题目：验证外星语词典"><a href="#题目：验证外星语词典" class="headerlink" title="题目：验证外星语词典"></a>题目：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/verifying-an-alien-dictionary/">验证外星语词典</a></h2><p><strong>难度：简单</strong></p>
-<p>  某种外星语也使用英文小写字母，但可能顺序 order 不同。字母表的顺序（order）是一些小写字母的排列。给定一组用外星语书写的单词 words，以及其字母表的顺序 order，只有当给定的单词在这种外星语中按字典序排列时，返回 true；否则，返回 false。</p>
+                <h2 id="题目：101-对称二叉树"><a href="#题目：101-对称二叉树" class="headerlink" title="题目：101. 对称二叉树"></a>题目：<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/verifying-an-alien-dictionary/"><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/symmetric-tree/">101. 对称二叉树</a></a></h2><p><strong>难度：简单</strong></p>
+<p>  给你一个二叉树的根节点 <code>root</code> ， 检查它是否轴对</p>
 <p><strong>示例 1:</strong></p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入：words <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"hello"</span><span class="token punctuation">,</span><span class="token string">"leetcode"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token string">"hlabcdefgijkmnopqrstuvwxyz"</span>
-输出：<span class="token boolean">true</span>
-解释：在该语言的字母表中，<span class="token char">'h'</span> 位于 <span class="token char">'l'</span> 之前，所以单词序列是按字典序排列的。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://assets.leetcode.com/uploads/2021/02/19/symtree1.jpg"></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入：root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+输出：<span class="token boolean">true</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <p><strong>示例 2:</strong></p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入：words <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"word"</span><span class="token punctuation">,</span><span class="token string">"world"</span><span class="token punctuation">,</span><span class="token string">"row"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token string">"worldabcefghijkmnpqstuvxyz"</span>
-输出：<span class="token boolean">false</span>
-解释：在该语言的字母表中，<span class="token char">'d'</span> 位于 <span class="token char">'l'</span> 之后，那么 words<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">></span> words<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>，因此单词序列不是按字典序排列的。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><img src="https://assets.leetcode.com/uploads/2021/02/19/symtree2.jpg"></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入：root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token keyword">null</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token keyword">null</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+输出：<span class="token boolean">false</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<p><strong>示例 3:</strong></p>
-<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入：words <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"apple"</span><span class="token punctuation">,</span><span class="token string">"app"</span><span class="token punctuation">]</span><span class="token punctuation">,</span> order <span class="token operator">=</span> <span class="token string">"abcdefghijklmnopqrstuvwxyz"</span>
-输出：<span class="token boolean">false</span>
-解释：当前三个字符 <span class="token string">"app"</span> 匹配时，第二个字符串相对短一些，然后根据词典编纂规则 <span class="token string">"apple"</span> <span class="token operator">></span> <span class="token string">"app"</span>，因为 <span class="token char">'l'</span> <span class="token operator">></span> <span class="token char">'∅'</span>，其中 <span class="token char">'∅'</span> 是空白字符，定义为比任何其他字符都小（更多信息）。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-<p><img src="https://s3.bmp.ovh/imgs/2022/05/23/b5521ce9212fbcbd.jpg"></p>
-<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>如果单词整体有序那么部分一定有序，反之同样成立。利用这种性质我们可以只比较相邻两个单词的顺序，规则如下：<br>    1.如果当前字母相同，比较下一个字母<br>    2.如果当前字母在order中的位置比下一个字母在order中的位置的前面，那么有序.<br>    3.如果当前字母在order中的位置比下一个字母在order中的位置的前面，那么无序.<br>    4.如果当前单词读完，而下一个单词没读完，则有序.<br>    5.如果当前单词没读完，下一个单词读完，则无序.<br>我们用’#’表示空位，如果读到’#’表示当前单词读完.</p>
-<p><img src="https://s3.bmp.ovh/imgs/2022/05/23/0e7efb73d4f3f9dd.jpg"></p>
+<p><img src="https://s3.bmp.ovh/imgs/2022/05/23/d566fb1f2d31a87a.jpg"></p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>  对称二叉树要求左右子树对应节点的val相等，那么我们可以同时对左右子树进行遍历，只要在遍历过程中出现对应节点val<br>不相等的情况，我们可以认定该二叉树不对称。在此过程中，如果出现左节点为空，右节点不为空的情况或者右节点为空，左节点<br>不为空的情况同样该二叉树不对称</p>
 <h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isAlienSorted</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> words<span class="token punctuation">,</span> <span class="token class-name">String</span> order<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>words<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span><span class="token function">isRightSequence</span><span class="token punctuation">(</span>words<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span>words<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span>order<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            <span class="token punctuation">&#125;</span>
+    <span class="token keyword">boolean</span> flag <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isSymmetric</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
         <span class="token punctuation">&#125;</span>
-        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token function">preOrder</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> flag<span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
-    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isRightSequence</span><span class="token punctuation">(</span><span class="token class-name">String</span> former<span class="token punctuation">,</span><span class="token class-name">String</span> latter<span class="token punctuation">,</span><span class="token class-name">String</span> order<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-        <span class="token keyword">int</span> len <span class="token operator">=</span> former<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> latter<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">?</span> former<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span>latter<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> formerChar <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">char</span><span class="token punctuation">[</span>len<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> latterChar <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token keyword">char</span><span class="token punctuation">[</span>len<span class="token punctuation">]</span><span class="token punctuation">;</span>
-        <span class="token keyword">char</span> f<span class="token punctuation">,</span>l<span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>len<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            formerChar<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">'#'</span><span class="token punctuation">;</span>
-            latterChar<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token char">'#'</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">void</span> <span class="token function">preOrder</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> lt<span class="token punctuation">,</span><span class="token class-name">TreeNode</span> rt<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>lt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token operator">&amp;&amp;</span>rt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
         <span class="token punctuation">&#125;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">arraycopy</span><span class="token punctuation">(</span>former<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>formerChar<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>former<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span><span class="token function">arraycopy</span><span class="token punctuation">(</span>latter<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>latterChar<span class="token punctuation">,</span><span class="token number">0</span><span class="token punctuation">,</span>latter<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">int</span> i<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>i<span class="token operator">&lt;</span>len<span class="token punctuation">;</span>i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-            f <span class="token operator">=</span> formerChar<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            l <span class="token operator">=</span> latterChar<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>f <span class="token operator">==</span> <span class="token char">'#'</span> <span class="token operator">&amp;&amp;</span> l <span class="token operator">!=</span> <span class="token char">'#'</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token punctuation">&#125;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>l <span class="token operator">==</span> <span class="token char">'#'</span> <span class="token operator">&amp;&amp;</span> f <span class="token operator">!=</span> <span class="token char">'#'</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            <span class="token punctuation">&#125;</span>
-            <span class="token keyword">if</span><span class="token punctuation">(</span>order<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span> <span class="token operator">></span> order<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
-            <span class="token punctuation">&#125;</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>order<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span>f<span class="token punctuation">)</span> <span class="token operator">&lt;</span> order<span class="token punctuation">.</span><span class="token function">lastIndexOf</span><span class="token punctuation">(</span>l<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
-                <span class="token keyword">break</span><span class="token punctuation">;</span>
-            <span class="token punctuation">&#125;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>lt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token operator">&amp;&amp;</span> rt<span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token operator">||</span><span class="token punctuation">(</span>rt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token operator">&amp;&amp;</span> lt<span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
         <span class="token punctuation">&#125;</span>
-        <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>lt<span class="token punctuation">.</span>val <span class="token operator">!=</span> rt<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            flag <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token function">preOrder</span><span class="token punctuation">(</span>lt<span class="token punctuation">.</span>right<span class="token punctuation">,</span>rt<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">preOrder</span><span class="token punctuation">(</span>lt<span class="token punctuation">.</span>left<span class="token punctuation">,</span>rt<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
     <span class="token punctuation">&#125;</span>
-<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>优化：去掉全局变量</strong></p>
+<p><img src="https://pic.leetcode-cn.com/1652187251-riTQZI-QQ%E6%88%AA%E5%9B%BE20220510204923.png"></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isSymmetric</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> root<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>root <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> <span class="token function">isSymmetric</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">isSymmetric</span><span class="token punctuation">(</span><span class="token class-name">TreeNode</span> lt<span class="token punctuation">,</span><span class="token class-name">TreeNode</span> rt<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>lt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token operator">&amp;&amp;</span>rt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token punctuation">(</span>lt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token operator">&amp;&amp;</span> rt<span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token operator">||</span><span class="token punctuation">(</span>rt <span class="token operator">==</span> <span class="token keyword">null</span><span class="token operator">&amp;&amp;</span> lt<span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>lt<span class="token punctuation">.</span>val <span class="token operator">!=</span> rt<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> <span class="token function">isSymmetric</span><span class="token punctuation">(</span>lt<span class="token punctuation">.</span>right<span class="token punctuation">,</span>rt<span class="token punctuation">.</span>left<span class="token punctuation">)</span> <span class="token operator">&amp;&amp;</span> <span class="token function">isSymmetric</span><span class="token punctuation">(</span>lt<span class="token punctuation">.</span>left<span class="token punctuation">,</span>rt<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 
                 
@@ -506,7 +518,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://lounwb.github.io/2022/05/17/953-%E9%AA%8C%E8%AF%81%E5%A4%96%E6%98%9F%E8%AF%AD%E8%AF%8D%E5%85%B8/">http://lounwb.github.io/2022/05/17/953-%E9%AA%8C%E8%AF%81%E5%A4%96%E6%98%9F%E8%AF%AD%E8%AF%8D%E5%85%B8/</a>
+                    <a href="http://lounwb.github.io/2022/05/10/101-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/">http://lounwb.github.io/2022/05/10/101-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -548,12 +560,12 @@
                                     <span class="chip bg-color">力扣每日一题</span>
                                 </a>
                             
-                                <a href="/tags/%E6%95%B0%E7%BB%84/">
-                                    <span class="chip bg-color">数组</span>
+                                <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+                                    <span class="chip bg-color">二叉树</span>
                                 </a>
                             
-                                <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                                    <span class="chip bg-color">字符串</span>
+                                <a href="/tags/%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86/">
+                                    <span class="chip bg-color">先序遍历</span>
                                 </a>
                             
                         </div>
@@ -870,12 +882,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/19/462-%E6%9C%80%E5%B0%91%E7%A7%BB%E5%8A%A8%E6%AC%A1%E6%95%B0%E4%BD%BF%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9B%B8%E7%AD%89II/">
+                <a href="/2022/05/11/449-%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
                     <div class="card-image">
                         
-                        <img src="https://i.postimg.cc/hGKKXQ8v/2766e6bae755e84e2536d830b82fe96.jpg" class="responsive-img" alt="462.最少移动次数使数组元素相等II">
+                        <img src="https://s3.bmp.ovh/imgs/2022/05/23/b753a1f4647f4ea4.jpg" class="responsive-img" alt="449.序列化和反序列化二叉搜索树">
                         
-                        <span class="card-title">462.最少移动次数使数组元素相等II</span>
+                        <span class="card-title">449.序列化和反序列化二叉搜索树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -886,7 +898,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                         </span>
                         <span class="publish-author">
                             
@@ -903,8 +915,12 @@
                         <span class="chip bg-color">力扣每日一题</span>
                     </a>
                     
-                    <a href="/tags/%E4%B8%AD%E4%BD%8D%E6%95%B0/">
-                        <span class="chip bg-color">中位数</span>
+                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+                        <span class="chip bg-color">二叉树</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
+                        <span class="chip bg-color">二叉搜索树</span>
                     </a>
                     
                 </div>
@@ -915,15 +931,15 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+                本篇&nbsp;<i class="far fa-dot-circle"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/16/%E9%9D%A2%E8%AF%95%E9%A2%9804-06%E5%90%8E%E7%BB%A7%E8%80%85/">
+                <a href="/2022/05/10/101-%E5%AF%B9%E7%A7%B0%E4%BA%8C%E5%8F%89%E6%A0%91/">
                     <div class="card-image">
                         
-                        <img src="https://i.postimg.cc/s2nb3TVj/fe2b7ed8b7572cb64ab2eda70490d0d.jpg" class="responsive-img" alt="面试题04.06后继者">
+                        <img src="https://s3.bmp.ovh/imgs/2022/05/23/f96fad9b05b87f79.jpg" class="responsive-img" alt="101.对称二叉树">
                         
-                        <span class="card-title">面试题04.06后继者</span>
+                        <span class="card-title">101.对称二叉树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -934,7 +950,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-16
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-10
                             </span>
                         <span class="publish-author">
                             
@@ -944,6 +960,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -951,16 +968,12 @@
                         <span class="chip bg-color">力扣每日一题</span>
                     </a>
                     
-                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
-                        <span class="chip bg-color">二叉搜索树</span>
+                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+                        <span class="chip bg-color">二叉树</span>
                     </a>
                     
-                    <a href="/tags/%E6%A0%88/">
-                        <span class="chip bg-color">栈</span>
-                    </a>
-                    
-                    <a href="/tags/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/">
-                        <span class="chip bg-color">中序遍历</span>
+                    <a href="/tags/%E5%85%88%E5%BA%8F%E9%81%8D%E5%8E%86/">
+                        <span class="chip bg-color">先序遍历</span>
                     </a>
                     
                 </div>

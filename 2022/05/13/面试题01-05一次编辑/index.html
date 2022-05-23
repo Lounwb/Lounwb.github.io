@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="page, HTML,CSS,JavaScript,JQuery,React">
-    <meta name="description" content="这是一个Page
-">
+    <meta name="keywords" content="面试题01.05一次编辑, HTML,CSS,JavaScript,JQuery,React">
+    <meta name="description" content="题目:面试题 01.05. 一次编辑难度:中等
+  字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。
+示例 1:
+输入: 
+first = ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +21,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>page | Lounwb</title>
+    <title>面试题01.05一次编辑 | Lounwb</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
@@ -247,12 +250,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s3.bmp.ovh/imgs/2022/05/23/b3755d001db941d2.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">page</h1>
+                    <h1 class="description center-align post-title">面试题01.05一次编辑</h1>
                 </div>
             </div>
         </div>
@@ -366,9 +369,17 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
+                                <span class="chip bg-color">力扣每日一题</span>
+                            </a>
+                        
+                            <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
+                                <span class="chip bg-color">双指针</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -380,7 +391,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-22
+                    2022-05-13
                 </div>
                 
 
@@ -401,12 +412,76 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
 
         
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>这是一个Page</p>
+                <h2 id="题目-面试题-01-05-一次编辑"><a href="#题目-面试题-01-05-一次编辑" class="headerlink" title="题目:面试题 01.05. 一次编辑"></a>题目:<a target="_blank" rel="noopener" href="https://leetcode.cn/problems/one-away-lcci/">面试题 01.05. 一次编辑</a></h2><p><strong>难度:中等</strong></p>
+<p>  字符串有三种编辑操作:插入一个英文字符、删除一个英文字符或者替换一个英文字符。 给定两个字符串，编写一个函数判定它们是否只需要一次(或者零次)编辑。</p>
+<p><strong>示例 1:</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入<span class="token operator">:</span> 
+first <span class="token operator">=</span> <span class="token string">"pale"</span>
+second <span class="token operator">=</span> <span class="token string">"ple"</span>
+输出<span class="token operator">:</span> <span class="token class-name">True</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>示例 2:</strong></p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java">输入<span class="token operator">:</span> 
+first <span class="token operator">=</span> <span class="token string">"pales"</span>
+second <span class="token operator">=</span> <span class="token string">"pal"</span>
+输出<span class="token operator">:</span> <span class="token class-name">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://s3.bmp.ovh/imgs/2022/05/23/39fc8cae4c4aa67b.png"></p>
+<h2 id="解题思路"><a href="#解题思路" class="headerlink" title="解题思路"></a>解题思路</h2><p>  首先我们需要明确一次编辑导致的情况：插入或删除会使字符串长度与原来相差1，替换会导致字符串长度与原来相等。那么两个字符串但凡长度相差超过1说明编辑次数必然超过2 所以直接返回false。比较两个字符串相等很自然想到用双指针，这里我们用用到了指针p和指针q。</p>
+<h4 id="1-长度不相等"><a href="#1-长度不相等" class="headerlink" title="1.长度不相等"></a>1.长度不相等</h4><h5 id="1-first-length-gt-second-length"><a href="#1-first-length-gt-second-length" class="headerlink" title="1)first.length() &gt; second.length();"></a>1)first.length() &gt; second.length();</h5><p>​      如果为一次操作，说明这是删除操作。</p>
+<p>​	  删除操作如果不发生在尾部必然会导致数组的偏移导致不对等，所以我们在遇到第一个不相等的字符的时候让first指针p向后位移一位,然后继续比较即可.</p>
+<h5 id="2-second-length-gt-first-length"><a href="#2-second-length-gt-first-length" class="headerlink" title="2)second.length() &gt; first.length();"></a>2)second.length() &gt; first.length();</h5><p>   与1)的情况是一样的，我们可以把 first与second交换一下 让second变成first first变成second，那么我们就可以复用1)的代码了</p>
+<p><img src="https://pic.leetcode-cn.com/1652409434-MGkAOj-QQ%E6%88%AA%E5%9B%BE20220513103545.png" alt="QQ截图20220513103545.png"></p>
+<h4 id="2-长度相等"><a href="#2-长度相等" class="headerlink" title="2.长度相等"></a>2.长度相等</h4><p>​	  一定是替换操作，那么我们只需要比较两个字符串对应位置不相等字符串的个数即可，如果不相等的字符超过1说明替换操作发生</p>
+<p>  不止一次.(我这里只是完全遍历了一遍，后续我可能会在优化，因为只需要跳过第一个不相等的字符进行比较就行)</p>
+<p>  <em><strong>*!!改了后发现用跳过第一个字符后在比较不如直接完全遍历一次然后再判断的效率高。*</strong></em></p>
+<p><img src="https://pic.leetcode-cn.com/1652409439-wMJogJ-QQ%E6%88%AA%E5%9B%BE20220513103655.png" alt="QQ截图20220513103655.png"></p>
+<h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">class</span> <span class="token class-name">Solution</span> <span class="token punctuation">&#123;</span>
+    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">oneEditAway</span><span class="token punctuation">(</span><span class="token class-name">String</span> first<span class="token punctuation">,</span> <span class="token class-name">String</span> second<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token class-name">Math</span><span class="token punctuation">.</span><span class="token function">abs</span><span class="token punctuation">(</span>first<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">-</span>second<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token operator">></span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> firstChar <span class="token operator">=</span> first<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">char</span><span class="token punctuation">[</span><span class="token punctuation">]</span> secondChar <span class="token operator">=</span> second<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> p<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">,</span>q<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">int</span> count <span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>first<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">==</span> second<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            <span class="token comment">//O(n)</span>
+            <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> first<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>firstChar<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">!=</span> secondChar<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+                    count<span class="token operator">++</span><span class="token punctuation">;</span>
+                <span class="token punctuation">&#125;</span>
+            <span class="token punctuation">&#125;</span>
+            <span class="token keyword">return</span> count <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>second<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">></span> first<span class="token punctuation">.</span><span class="token function">length</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+            firstChar <span class="token operator">=</span> second<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            secondChar <span class="token operator">=</span> first<span class="token punctuation">.</span><span class="token function">toCharArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>p<span class="token operator">&lt;</span>firstChar<span class="token punctuation">.</span>length <span class="token operator">&amp;&amp;</span> q<span class="token operator">&lt;</span> secondChar<span class="token punctuation">.</span>length<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>firstChar<span class="token punctuation">[</span>p<span class="token punctuation">]</span> <span class="token operator">!=</span> secondChar<span class="token punctuation">[</span>q<span class="token punctuation">]</span> <span class="token operator">&amp;&amp;</span> count <span class="token operator">==</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                p<span class="token operator">++</span><span class="token punctuation">;</span>
+                count<span class="token operator">++</span><span class="token punctuation">;</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>firstChar<span class="token punctuation">[</span>p<span class="token punctuation">]</span> <span class="token operator">!=</span> secondChar<span class="token punctuation">[</span>q<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+                count<span class="token operator">++</span><span class="token punctuation">;</span>
+            <span class="token punctuation">&#125;</span>
+            p<span class="token operator">++</span><span class="token punctuation">;</span>
+            q<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">&#125;</span>
+        <span class="token keyword">return</span> count <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
                 
             </div>
@@ -433,7 +508,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://lounwb.github.io/2022/05/22/page/">http://lounwb.github.io/2022/05/22/page/</a>
+                    <a href="http://lounwb.github.io/2022/05/13/%E9%9D%A2%E8%AF%95%E9%A2%9801-05%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91/">http://lounwb.github.io/2022/05/13/%E9%9D%A2%E8%AF%95%E9%A2%9801-05%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -470,7 +545,15 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
+                                    <span class="chip bg-color">力扣每日一题</span>
+                                </a>
+                            
+                                <a href="/tags/%E5%8F%8C%E6%8C%87%E9%92%88/">
+                                    <span class="chip bg-color">双指针</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -499,6 +582,276 @@
     
 
     
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments textarea {
+        box-sizing: border-box;
+        background: url("/medias/comment_bg.png") 100% 100% no-repeat;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #4cbf30;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div class="comment_headling"
+         style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="vcomments" class="card-content" style="display: grid">
+    </div>
+</div>
+
+<script>
+    $.getScript("/libs/valine/av-min.js", function () {
+        $.getScript("/libs/valine/Valine.min.js", function () {
+            new Valine({
+                el: '#vcomments',
+                appId: 'oBVEzt1jfJaJKaEkYqRaiRGy-9Nh9j0Va',
+                appKey: 'nP6NjC5ENzVGUIpmlABFkLwk',
+                notify: 'false' === 'true',
+                verify: 'false' === 'true',
+                visitor: 'true' === 'true',
+                avatar: 'mm',
+                pageSize: '10',
+                lang: 'zh-cn',
+                placeholder: 'just go go'
+            });
+
+        })
+    })
+</script>
+
+<!--酷Q推送-->
+
+
+    
 
     
 
@@ -515,12 +868,12 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/23/%E9%9D%A2%E8%AF%95%E9%A2%9801-05%E4%B8%80%E6%AC%A1%E7%BC%96%E8%BE%91/">
+                <a href="/2022/05/14/691-%E8%B4%B4%E7%BA%B8%E6%8B%BC%E8%AF%8D/">
                     <div class="card-image">
                         
-                        <img src="https://s3.bmp.ovh/imgs/2022/05/23/b3755d001db941d2.jpg" class="responsive-img" alt="面试题01.05一次编辑">
+                        <img src="https://s3.bmp.ovh/imgs/2022/05/23/7a3b63e3f8410875.jpg" class="responsive-img" alt="691.贴纸拼词">
                         
-                        <span class="card-title">面试题01.05一次编辑</span>
+                        <span class="card-title">691.贴纸拼词</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -531,7 +884,7 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-14
                         </span>
                         <span class="publish-author">
                             
@@ -540,6 +893,22 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
+                        <span class="chip bg-color">力扣每日一题</span>
+                    </a>
+                    
+                    <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/">
+                        <span class="chip bg-color">动态规划</span>
+                    </a>
+                    
+                    <a href="/tags/%E7%8A%B6%E6%80%81%E5%8E%8B%E7%BC%A9/">
+                        <span class="chip bg-color">状态压缩</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -551,13 +920,12 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/22/about/">
+                <a href="/2022/05/11/449-%E5%BA%8F%E5%88%97%E5%8C%96%E5%92%8C%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
                     <div class="card-image">
                         
+                        <img src="https://s3.bmp.ovh/imgs/2022/05/23/b753a1f4647f4ea4.jpg" class="responsive-img" alt="449.序列化和反序列化二叉搜索树">
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="about">
-                        
-                        <span class="card-title">about</span>
+                        <span class="card-title">449.序列化和反序列化二叉搜索树</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -568,7 +936,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-11
                             </span>
                         <span class="publish-author">
                             
@@ -577,6 +945,22 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
+                        <span class="chip bg-color">力扣每日一题</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
+                        <span class="chip bg-color">二叉树</span>
+                    </a>
+                    
+                    <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
+                        <span class="chip bg-color">二叉搜索树</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -766,11 +1150,10 @@
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2019-2022</span>
+                <span id="year">2022</span>
             
             <a href="/about" target="_blank">Lounwb</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
             
@@ -802,9 +1185,9 @@
                         var days = hours * 24;
                         var years = days * 365;
                         var today = new Date();
-                        var startYear = "2019";
-                        var startMonth = "6";
-                        var startDate = "28";
+                        var startYear = "2022";
+                        var startMonth = "5";
+                        var startDate = "10";
                         var startHour = "0";
                         var startMinute = "0";
                         var startSecond = "0";
