@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title>IDEA版本问题导致${pageContext.session}无提示</title>
+      <link href="/2022/11/28/IDEA%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4$%7BpageContext.session%7D%E6%97%A0%E6%8F%90%E7%A4%BA/"/>
+      <url>/2022/11/28/IDEA%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4$%7BpageContext.session%7D%E6%97%A0%E6%8F%90%E7%A4%BA/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>​在IDEA2021.2.3版本中，jsp代码&lt;%%&gt;中或者el表达式#{}中pageContext这个jsp内置对象不能正常提示，见下图。而其他内置对象比如session或者request可以正常提示。</p><p><img src="https://raw.githubusercontent.com/Lounwb/imgbed-picgo-repo/master/blogimg/QQ%E5%9B%BE%E7%89%8720221127225647.png"></p><p><img src="https://raw.githubusercontent.com/Lounwb/imgbed-picgo-repo/master/blogimg/QQ%E5%9B%BE%E7%89%8720221127225652.png"></p><h2 id="查看报错原因"><a href="#查看报错原因" class="headerlink" title="查看报错原因"></a>查看报错原因</h2><p><img src="https://raw.githubusercontent.com/Lounwb/imgbed-picgo-repo/master/blogimg/QQ%E5%9B%BE%E7%89%8720221127225942.png"></p><p>原来是IDEA自动到javax包下面去找。我tomcat的版本是10.0.26，是比较新的版本，包名由javax变成了jakarta。</p><p><img src="https://raw.githubusercontent.com/Lounwb/imgbed-picgo-repo/master/blogimg/QQ%E5%9B%BE%E7%89%8720221127230017.png"></p><h2 id="找到解决方案"><a href="#找到解决方案" class="headerlink" title="找到解决方案"></a>找到解决方案</h2><p>所以我想到应该是IDEA版本的问题，所以我更新版本到2022.2.3（其实IDEA2021.3.2就解决了这个问题）</p><p><img src="https://raw.githubusercontent.com/Lounwb/imgbed-picgo-repo/master/blogimg/QQ%E5%9B%BE%E7%89%8720221127230227.png"></p><p>更新以后就可以正常提示了。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> bug </tag>
+            
+            <tag> servlet </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MySQL数据库丢失问题</title>
+      <link href="/2022/11/28/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/"/>
+      <url>/2022/11/28/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>前一天学习MyBatis的时候使用Navicat，关电脑的时候没关闭数据库，第二天再用的时候连接好数据库发现库名不对，而且我用的数据库也没了，以为我不小心删了</p><h2 id="寻找Bug"><a href="#寻找Bug" class="headerlink" title="寻找Bug"></a>寻找Bug</h2><p>当时想到了以下几种可能</p><p>1.使用的navicat破解版，有Bug</p><p>2.不小心按到快捷键删除库. 查看日志发现navicat的日志只能查看本次使用的日志，没有以前的日志</p><h2 id="找到Bug"><a href="#找到Bug" class="headerlink" title="找到Bug"></a>找到Bug</h2><p><img src="https://raw.githubusercontent.com/Lounwb/imgbed-picgo-repo/master/blogimg/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20221127230818.jpg"></p><p>表哥说MySQL有两个服务，一个是MySQL，另一个是MySQL80。两个服务用的不同的本地文件。</p><h2 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h2><p>把MySQL80服务禁止掉 启动MySQL服务即可，找到原来的库</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> MySQL </tag>
+            
+            <tag> bug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>字符串字典序</title>
       <link href="/2022/05/29/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E5%85%B8%E5%BA%8F/"/>
       <url>/2022/05/29/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E5%85%B8%E5%BA%8F/</url>
