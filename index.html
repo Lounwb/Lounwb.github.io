@@ -1,1523 +1,456 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
-
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <title>Tianyu Li / The Road Not Taken</title>
     <meta charset="utf-8">
-    <meta name="keywords" content="HTML,CSS,JavaScript,JQuery,React,Lounwb">
-    <meta name="description" content="Lounwb">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <meta name="renderer" content="webkit|ie-stand|ie-comp">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <title>Lounwb</title>
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
-    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/matery.css">
-    <link rel="stylesheet" type="text/css" href="/css/my.css">
-    <link rel="stylesheet" type="text/css" href="/css/dark.css">
-    <script src="/libs/jquery/jquery-3.6.0.min.js"></script>
-<meta name="generator" content="Hexo 6.2.0"></head>
-
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/css/latofonts.css" rel="stylesheet" type="text/css">
+    <link href="/css/latolatinfonts.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="http://www.uestc.edu.cn/favicon.ico">
+    <!--<link href="/css/index.css" rel="stylesheet">-->
+    <script type="text/javascript"> 
+        function loadcss(url) {
+            var head = document.getElementsByTagName('head')[0],
+            link = document.createElement('link');
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            link.href = url;
+            head.appendChild(link);
+            return link;
+        }
+        if(navigator.appVersion.indexOf("Win")!=-1) {
+            loadcss("css/win-index.css");
+        }else {
+            loadcss("css/index.css");
+        }
+    </script>
+</head>
 <body>
-<header class="navbar-fixed">
-    <nav id="headNav" class="bg-color nav-transparent">
-        <div id="navContainer" class="nav-wrapper container">
-            <div class="brand-logo">
-                <a href="/" class="waves-effect waves-light">
-                    
-                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
-                    
-                    <span class="logo-span">Lounwb</span>
-                </a>
+    <!-- You can put google analytics here -->
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="nav-item">
+                    <a class="nav-link active" href="http:///lounwb.top">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link " href="http:///lounwb.top">Curriculum Vitae</a>
+                </li>
+        
+                <li class="nav-item">
+                    <a class="nav-link " href="https://lounwb.top">Google Scholar</a>
+                </li>
+        
+                <!--<li class="nav-item">
+                    <a class="nav-link " href="/blog">Blog</a>
+                </li>-->
+      
+                <li class="nav-item">
+                    <a class="nav-link " href="http://github.com/lounwb"><i class="fa fa-github"></i></a>
+                </li>
+      
+                <li class="nav-item">
+                    <a class="nav-link " href="http://twitter.com/lounwb"><i class="fa fa-twitter"></i></a>
+                </li>
+            </ul>
+            <h2><a class="black" href="/">Tianyu Li</a></h2>
+        </div>
+
+        <p class="contact">
+            <a href="mailto:lounwb@gmail.com"><i class="fa fa-envelope-o"></i> lounwb@gmail.com</a> |
+            <a href="https://github.com/Lounwb"><i class="fa fa-github"></i> Lounwb</a> |
+            <a href="https://twitter.com/Lounwb"><i class="fa fa-twitter"></i> @Lounwb</a> |
+            <a href="http://yupinglu.me/dissertation/">Dissertation</a>
+        </p>
+
+        <div class="row">
+            <div class="col-sm-8 col-md-8">
+                <h3 id="research-interests">Research Interests</h3>
+                <p>Machine Learning | Transferable Adversarial Attack</p>
+
+                <h3 id="education">Education</h3>
+
+                <!-- <h5 id="university-of-tennessee"><a href="http://www.utk.edu"><strong>University of Tennessee, Knoxville</strong></a></h5>
+                <ul>
+                    <li><a href="http://www.eecs.utk.edu/">Department of Electrical Engineering &amp; Computer Science</a></li> 
+                    <li>PhD in Computer Science (August 2019) | GPA: 3.91</li>
+                    <li>Advisor: Dr. Michael A. Langston</li>
+                    <li><a href="http://yupinglu.me/dissertation/">Dissertation</a></li>
+                </ul> -->
+
+                <h5 id="university-of-electronic-science-an-technology-of-china"><a href="http://en.uestc.edu.cn/"><strong>University of Electronic Science and Technology of China</strong></a></h5>
+                <ul>
+					<li>BEng in Software Engineering (May 2025) | GPA: 3.98</li>
+                    <li><a href="https://sise.uestc.edu.cn/info/1036/5684.htm">Tutor: Dr. Xiaoyu Li</a></li>
+                </ul>
+
+                <h4 id="honors">Honors</h4>
+                <ul>
+                    <li>The First Prize Scholarship, University of Electronic Science and Technology of China (2022)</li>
+                </ul>
             </div>
-            
+               
+            <div class="col-sm-4 col-md-4">
+                <img src="/img/LiTianyu.png" class="img-thumbnail" alt="Tianyu Li">
+                <br/>   
+                <br/>
+                <p class="text-justify">
+                    <em>Ages ago, in another city, on another bus, I sat so at the windows, looking outward, investing for each flying face which trapped my brief attention some life, some destiny, 
+                    in which I played a part.</em>
+                </p>
+            </div>
+        </div>
 
-<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
-<ul class="right nav-menu">
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/" class="waves-effect waves-light">
-      
-      <i class="fas fa-home" style="zoom: 0.6;"></i>
-      
-      <span>首页</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/tags" class="waves-effect waves-light">
-      
-      <i class="fas fa-tags" style="zoom: 0.6;"></i>
-      
-      <span>标签</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/categories" class="waves-effect waves-light">
-      
-      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
-      
-      <span>分类</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/archives" class="waves-effect waves-light">
-      
-      <i class="fas fa-archive" style="zoom: 0.6;"></i>
-      
-      <span>归档</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/about" class="waves-effect waves-light">
-      
-      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
-      
-      <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/friends" class="waves-effect waves-light">
-      
-      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
-      
-      <span>友情链接</span>
-    </a>
-    
-  </li>
-  
-  <li>
-    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
-      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
-    </a>
-  </li>
-</ul>
-
-
-<div id="mobile-nav" class="side-nav sidenav">
-
-    <div class="mobile-head bg-color">
+        <h3 id="research-and-work-experience">Experience</h3>
+        <!-- <div>
+            <strong>Katana Graph</strong> — Lakewood, CO<br/>
+            Machine Learning Engineer II — 2021 - Present<br/>
+            <ul>
+                <li>Implemented Graph Neural Networks algorithms and infrastructure.</li>
+                <li>Implemented end-to-end pipelines of data analysis.</li>
+            </ul>
+        </div>
         
-        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        <div>
+            <strong>Lawrence Berkeley National Laboratory</strong> — Berkeley, CA<br/>
+            Postdoctoral Scholar, the Advanced Light Source — 2019 - 2021<br/>
+            <ul>
+                <li>Supervisor: <a href="https://als.lbl.gov/people/simon-leemann/">Dr. Simon C. Leemann</a></li>
+                <li>Improved multi-objective genetic algorithm for Lattice Optimization using Deep Learning.</li>
+                <li>Achieved orders of magnitude speedup on HPC clusters.</li>
+            </ul>
+        </div>
+
+        <div>
+            <strong>Oak Ridge National Laboratory</strong> — Oak Ridge, TN<br/>
+            Graduate Research Assistant, the Atmospheric Radiation Measurement (ARM) Data Center — 2017 - 2019<br/>
+            <ul>
+                <li>Mentor: <a href="https://www.climatemodeling.org/~jkumar/">Dr. Jitendra Kumar</a></li>
+                <li>Radar data (NEXRAD, ARM CSAPR) classification using convolutional neural networks.</li>
+                <li>Detected outliers in streaming time series data from ARM distributed sensors.</li>
+            </ul>
+            Research Intern, the Scientific Data Group — Summer 2017, Summer 2016<br/>
+            <ul>
+                <li>Mentor: <a href="http://www.csm.ornl.gov/~ost/">Dr. George Ostrouchov</a></li>
+                <li>Scaling a PheWAS logistic regression R code on HPC clusters with pbdR tools using singularity container, 2017.</li>
+                <li>Implemented an R package <a href="https://github.com/YupingLu/pbdADIOS">pbdADIOS</a> to connect R with ADIOS parallel middleware for I/O, 2016.</li>
+                <li>Most functions in this package are implemented with C++.</li>
+            </ul>
+        </div> -->
         
-        <div class="logo-name">Lounwb</div>
-        <div class="logo-desc">
-            
-            Never really desperate, only the lost of the soul.
-            
+        <!-- <div>
+            <strong>University of Tennessee, Knoxville</strong> — Knoxville, TN<br/>
+            Graduate Research Assistant, the Office of Information Technology — 2014 - 2017<br/>
+            <ul>
+                <li>University web server configuration and optimization.</li>
+                <li>Google Search Appliance administration and implementation.</li>
+            </ul>
+
+            Graduate Research Assistant, Dr. Michael A. Langston’s lab — 2013 - 2014<br/>
+            <ul>
+                <li>Implemented an R package <a href="https://github.com/YupingLu/biclique">biclique</a> to enumerate maximal bicliques.</li>
+                <li>Developed <a href="https://grappa.eecs.utk.edu/">GrAPPA</a> which is a web interface built on the <a href="https://usegalaxy.org/">Galaxy</a> framework (Python) for graph-based tools.</li>
+            </ul>
+        </div> -->
+        <div>
+            <strong>Southwest Petroleum University</strong> — Chengdu, China<br/>
+            Transferable Adversarial Attack samples — 2023 -<br/>
+            <ul>
+                <li>Mentor: <a href="https://www.swpu.edu.cn/scs/info/1169/4798.htm">Dr. Desheng Zheng</a></li>
+            </ul>
+
+        </div>
+        <div>
+            <strong>University of Electronic Science and Technology of China</strong> — Chengdu, China<br/>
+            Raspberry Pi Intelligent Meeting Room Management System<br/>
+            <ul>
+                <li>Supervisor: <a href="https://sise.uestc.edu.cn/info/1037/5735.htm">Shuhua Wen</a></li>
+                <li>Implement a conference room system that allows online subscription, offline facial recognition check-in, and access control</li>
+                <li>Including raspberry pie front end, Android end, web Frontend and backend which uses face_recognition, Vue, SpringBoot, MyBatis, Redis and etc.</li>
+            </ul>
+
+        </div>
+        <h3 id="publications">Publications</h3>
+
+        <!-- <h4 id="conference-papers">Conference Papers</h4> -->
+        <!-- <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/ipac21.pdf" class="pub-title">Enhancing the MOGA Optimization Process at ALS-U with Machine Learning</a>
+                    </strong><br/>
+                    Yuping Lu, Simon C. Leemann, Changchun Sun, Michael P. Ehrlichman, Thorsten Hellert, Hiroshi Nishimura, Marco Venturini<br/>
+                    <span class="venue"><a href="https://www.ipac21.org/">IPAC 21</a></span> (2021)<br/>
+                    <span class="pub">
+                        <a href="/files/ipac21.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://accelconf.web.cern.ch/ipac2021/papers/mopab106.pdf"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/weights.pdf" class="pub-title">Clique Selection and its Effect on Paraclique Enrichment: An Experimental Study</a>
+                    </strong><br/>
+                    Yuping Lu, Charles A. Phillips, Elissa J. Chesler, Michael A. Langston<br/>
+                    <span class="venue"><a href="https://easychair.org/publications/volume/BICOB_2020">Proceedings of the 12th International Conference on Bioinformatics and Computational Biology</a></span> (2020)<br/>
+                    <span class="pub">
+                        <a href="/files/weights.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://easychair.org/publications/paper/mDZB"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/icdmw2019.pdf" class="pub-title">Convolutional Neural Networks for Hydrometeor Classification using Dual Polarization Doppler Radars</a>
+                    </strong><br/>
+                    Yuping Lu, Jitendra Kumar<br/>
+                    <span class="venue"><a href="https://ieeexplore.ieee.org/xpl/conhome/8949436/proceeding">Proceedings of the 2019 IEEE International Conference on Data Mining Workshops</a></span> (ICDMW 2019)<br/>
+                    <span class="pub">
+                        <a href="/files/icdmw2019.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://ieeexplore.ieee.org/document/8955644"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/icdmw2018.pdf" class="pub-title">Detecting Outliers in Streaming Time Series Data from ARM Distributed Sensors</a>
+                    </strong><br/>
+                    Yuping Lu, Jitendra Kumar, Nathan Collier, Bhargavi Krishna, Michael A. Langston<br/>
+                    <span class="venue"><a href="https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=8626049">Proceedings of the 2018 IEEE International Conference on Data Mining Workshops</a></span> (ICDMW 2018)<br/>
+                    <span class="pub">
+                        <a href="/files/icdmw2018.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://ieeexplore.ieee.org/document/8637541"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <h4 id="journal-papers">Journal Papers</h4>
+        <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="#" class="pub-title">Demonstration of Machine Learning-enhanced Multiobjective Optimization of Ultrahigh-brightness Lattices for Fourth-generation Synchrotron Light Sources</a>
+                    </strong><br/>
+                    Yuping Lu, Simon C. Leemann, Changchun Sun, Michael P. Ehrlichman, Hiroshi Nishimura, Marco Venturini, Thorsten Hellert<br/>
+                    <span class="venue"><a href="https://www.sciencedirect.com/science/article/pii/S0168900223001821">Nuclear Inst. and Methods in Physics Research, A</a></span> — (2023): 168192 doi:10.1016/j.nima.2023.168192<br/>
+                    <span class="pub">
+                        <a href="/files/als2023.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0168900223001821"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/biclique.pdf" class="pub-title">Biclique: Maximal Biclique Enumeration in Bipartite Graphs</a>
+                    </strong><br/>
+                    Yuping Lu, Charles A. Phillips, Michael A. Langston<br/>
+                    <span class="venue"><a href="https://bmcresnotes.biomedcentral.com/">BMC Research Notes</a></span> — 13, 88 (2020) doi:10.1186/s13104-020-04955-0<br/>
+                    <span class="pub">
+                        <a href="/files/biclique.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-04955-0"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/robust.pdf" class="pub-title">A Robustness Metric for Biological Data Clustering Algorithms</a>
+                    </strong><br/>
+                    Yuping Lu, Charles A. Phillips, Michael A. Langston<br/>
+                    <span class="venue"><a href="https://bmcbioinformatics.biomedcentral.com/">BMC Bioinformatics</a></span> — 20, 503 (2019) doi:10.1186/s12859-019-3089-6<br/>
+                    <span class="pub">
+                        <a href="/files/robust.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3089-6"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/mpmi-05-11-0106.pdf" class="pub-title">Digital Gene Expression Profiling of the Phytophthora Sojae Transcriptome</a>
+                    </strong><br/>
+                    Wenwu Ye, Xiaoli Wang, Kai Tao, Yuping Lu, Tingting Dai, Suomeng Dong, Daolong Dou, Mark Gijzen, Yuanchao Wang<br/>
+                    <span class="venue"><a href="http://apsjournals.apsnet.org/loi/mpmi">Molecular Plant-Microbe Interactions</a></span> — 24(12):1530–1539, December 2011<br/>
+                    <span class="pub">
+                        <a href="/files/mpmi-05-11-0106.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="http://apsjournals.apsnet.org/doi/abs/10.1094/MPMI-05-11-0106"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+        </ul> -->
+
+        <!-- <h4 id="posters">Posters & Short Papers</h4> -->
+        <!-- <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/ipac_21_poster.pdf" class="pub-title">Enhancing the MOGA Optimization Process at ALS-U with Machine Learning</a>
+                    </strong><br/>
+                    Yuping Lu, Simon C. Leemann, Changchun Sun, Michael P. Ehrlichman, Thorsten Hellert, Hiroshi Nishimura, Marco Venturini<br/>
+                    <span class="venue"><a href="https://www.ipac21.org/">IPAC 21</a></span>
+                    — Campinas, Brazil, May 24, 2021<br/>
+                    <span class="pub">
+                        <a href="/files/ipac_21_poster.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Poster</a>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/user_meeting_20_poster.pdf" class="pub-title">Improving Multi-objective Genetic Algorithm for Lattice Optimization with Machine Learning</a>
+                    </strong><br/>
+                    Yuping Lu, Changchun Sun, and Simon C. Leemann<br/>
+                    <span class="venue"><a href="https://als.lbl.gov/2020-user-meeting-agenda/">ALS User Meeting 2020</a></span>
+                    — Berkeley, California, August 25, 2020<br/>
+                    <span class="pub">
+                        <a href="/files/user_meeting_20_poster.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Poster</a>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/user_meeting_19_poster.pdf" class="pub-title">Beam Based Optimization and Machine Learning for Synchrotrons</a>
+                    </strong><br/>
+                    Charles Nathan Melton, Yuping Lu, Shuai Liu, Hiroshi Nishimura, Matthew Marcus, Changchun Sun, Alexander Hexemer, Simon C. Leemann<br/>
+                    <span class="venue"><a href="https://als.exposure.co/2019-als-user-meeting">ALS User Meeting 2019</a></span>
+                    — Berkeley, California, October 1, 2019<br/>
+                    <span class="pub">
+                        <a href="/files/user_meeting_19_poster.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Poster</a>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/PI2019poster.pdf" class="pub-title">Convolutional Neural Networks for Hydrometeor Classification Using Dual Polarization Doppler Radars</a>
+                    </strong><br/>
+                    Yuping Lu, Jitendra Kumar<br/>
+                    <span class="venue"><a href="https://www.orau.gov/2019armasr/">2019 ARM/ASR PI Meeting</a></span>
+                    — Rockville, MD, June 11, 2019<br/>
+                    <span class="pub">
+                        <a href="/files/PI2019poster.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Poster</a>
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/bio2016.pdf" class="pub-title">Enrichment vs Robustness: A Comparison of Transcriptomic Data Clustering Metrics</a>
+                    </strong><br/>
+                    Yuping Lu, Charles A Phillips, Michael A Langston<br/>
+                    <span class="venue"><a href="https://bmcbioinformatics.biomedcentral.com/">BMC Bioinformatics</a></span> — 17(Suppl 10):P10, August 2016<br/>
+                    <span class="pub">
+                        <a href="/files/bio2016.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> |
+                        <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1154-y"><i class="fa fa-globe" aria-hidden="true"></i> Web</a>
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <h4 id="posters">Talks</h4>
+        <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="https://www.orau.gov/2019armasr/" class="pub-title">Deep Convolutional Neural Networks for Hydrometeor Classification using Dual Polarization Doppler Radars</a>
+                    </strong><br/>
+                    2019 ARM/ASR PI Meeting, Rockville, MD, June 10, 2019<br/>
+                    <span class="pub">
+                        <a href="/files/PI2019.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Slides</a>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/isbra2018proceedings.pdf" class="pub-title">A Robustness Metric for Biological Data Clustering Algorithms</a>
+                    </strong><br/>
+                    ISBRA 2018, Beijing, China, June 10, 2018<br/>
+                    <span class="pub">
+                        <a href="/files/robustness.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Slides</a>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/ARM-yl.pdf" class="pub-title">Outlier Detection for SGPMET Data</a>
+                    </strong><br/>
+                    Oak Ridge National Laboratory, April 04, 2018<br/>
+                    <span class="pub">
+                        <a href="/files/ARM-yl.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Slides</a>
+                    </span>
+                </div>
+            </li>
+        </ul> -->
+
+        <!-- <h4 id="professional-service">Professional Service</h4> -->
+        <!-- <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="http://www.sciencepublishinggroup.com/journal/peerreviewers?journalid=112" class="pub-title">Reviewer, Computational Biology and Bioinformatics, 2020-2022.</a>
+                    </strong><br/>
+                    <span class="pub">
+                        <a href="http://www.sciencepublishinggroup.com/journal/peerreviewers?journalid=112"><i class="fa fa-globe" aria-hidden="true"></i> Web</a>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/FAW2015.pdf" class="pub-title">Reviewer, 9th International Workshop on Frontiers in Algorithmics, FAW 2015.</a>
+                    </strong><br/>
+                    <span class="pub">
+                        <a href="/files/FAW2015.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> |
+                        <a href="https://link.springer.com/book/10.1007/978-3-319-19647-3"><i class="fa fa-globe" aria-hidden="true"></i> Web</a>
+                    </span>
+                </div>
+              </li>
+              <li>
+                <div class="pub">
+                    <strong>
+                        <a href="/files/WALCOM2015.pdf" class="pub-title">Reviewer, 9th International Workshop on Algorithms and Computation, WALCOM 2015.</a>
+                    </strong><br/>
+                    <span class="pub">
+                        <a href="/files/WALCOM2015.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> |
+                        <a href="https://link.springer.com/book/10.1007%2F978-3-319-15612-5"><i class="fa fa-globe" aria-hidden="true"></i> Web</a>
+                    </span>
+                </div>
+            </li>
+        </ul>
+ -->
+        <h4 id="student-volunteer">Student Volunteer</h4>
+        <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="https://mp.weixin.qq.com/s/H6bmKu4nom4M0trdONV_Pw" class="pub-title">Computer Science Popularization Forum : Kangding No.2 High School, Ganzi Prefecture, Sichuan Province, China. May 14, 2023</a>
+                    </strong><br/>
+                    <span class="pub">
+                        <a href="https://pan.baidu.com/s/1UGHrfTBkloCBjPHFZBnleA?pwd=6589"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <p>&copy; 2023 by Tianyu Li. Powered by <a href="http://getbootstrap.com/">Twitter Bootstrap</a> Last updated: 2023-07-24</p>
         </div>
     </div>
 
-    <ul class="menu-list mobile-menu-list">
-        
-        <li class="m-nav-item">
-	  
-		<a href="/" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-home"></i>
-			
-			首页
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/tags" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-tags"></i>
-			
-			标签
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/categories" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-bookmark"></i>
-			
-			分类
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/archives" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-archive"></i>
-			
-			归档
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/about" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-user-circle"></i>
-			
-			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/friends" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-address-book"></i>
-			
-			友情链接
-		</a>
-          
-        </li>
-        
-        
-    </ul>
-</div>
-
-
-        </div>
-
-        
-    </nav>
-
-</header>
-
-
-<main id="main_wrap">
-    
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color: rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item  white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
-    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
-        <div class="brand">
-            <div class="title center-align">
-                
-                永远在路上
-                
-            </div>
-
-            <div class="description center-align">
-                
-                <span id="subtitle"></span>
-                <script src="/libs/typed/typed.min.js"></script>
-                <script>
-                    var typed = new Typed("#subtitle", {
-                        strings: [ 
-                            
-                                "从来没有真正的绝境, 只有心灵的迷途",
-                            
-                                "Never really desperate, only the lost of the soul",
-                            
-                        ],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
-                    });
-                </script>
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
-
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开始阅读
-                </a>
-
-                
-                    <a href="https://github.com/Lounwb" class="waves-effect waves-light btn" target="_blank">
-                        <i class="fab fa-github-alt"></i>Github
-                    </a>
-                
-            </div>
-            <div class="cover-social-link">
-    <a href="https://github.com/Lounwb" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1904396849@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1904396849" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1904396849" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-        </div>
-    </div>
-
-    
-</div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-
-        //用户触摸轮播自动 restartPlay 是否生效
-        let initUserPressedOrDraggedActive = false
-
-        //用户触摸轮播自动 restartPlay
-        function initUserPressedOrDragged(instance) {
-            setInterval(() => {
-                if (instance.pressed || instance.dragged) {
-                    // console.log('initUserPressedOrDragged: ',instance.pressed,instance.dragged)
-                    restartPlay()
-                }
-            }, 1000)
-        }
-
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true',
-            onCycleTo() {
-                if (!initUserPressedOrDraggedActive) {
-                    // console.log('initUserPressedOrDraggedActive')
-                    initUserPressedOrDragged(this)
-                    initUserPressedOrDraggedActive = true
-                }
-            },
-        })
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function () {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        function restartPlay() {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
-
-
-<main class="content">
-
-    
-    <div id="indexCard" class="index-card">
-        <div class="container ">
-            <div class="card">
-                <div class="card-content">
-                    
-                        <div class="dream">
-    
-    <div class="title center-align">
-        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;写在前面
-    </div>
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            她意识到，命运对自己过于偏爱。她一路顺境，好运接踵而至。直到需要运用才智和能力来挽救自己和孩子的生命时，她才发现自己的生活一直空虚苍白，她不曾积攒任何与逆境争斗的力量。——茨威格《断头王后》
-        </div>
-    </div>
-</div>
-
-                    
-
-                    
-
-                    
-
-                    
-                    <div id="recommend-sections" class="recommend">
-                        
-
-
-
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    
-
-    
-
-    <!-- 所有文章卡片 -->
-    <article id="articles" class="container articles">
-        <div class="row article-row">
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/11/28/IDEA%E7%89%88%E6%9C%AC%E9%97%AE%E9%A2%98%E5%AF%BC%E8%87%B4$%7BpageContext.session%7D%E6%97%A0%E6%8F%90%E7%A4%BA/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="IDEA版本问题导致${pageContext.session}无提示">
-                            
-                            <span class="card-title">IDEA版本问题导致${pageContext.session}无提示</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                问题​	在IDEA2021.2.3版本中，jsp代码&lt;%%&gt;中或者el表达式#{}中pageContext这个jsp内置对象不能正常提示，见下图。而其他内置对象比如session或者request可以正常提示。
-
-
-查看报错原因
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/bug/">
-                            <span class="chip bg-color">bug</span>
-                        </a>
-                        
-                        <a href="/tags/servlet/">
-                            <span class="chip bg-color">servlet</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/11/28/MySQL%E6%95%B0%E6%8D%AE%E5%BA%93%E4%B8%A2%E5%A4%B1%E9%97%AE%E9%A2%98/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="MySQL数据库丢失问题">
-                            
-                            <span class="card-title">MySQL数据库丢失问题</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                问题前一天学习MyBatis的时候使用Navicat，关电脑的时候没关闭数据库，第二天再用的时候连接好数据库发现库名不对，而且我用的数据库也没了，以为我不小心删了
-寻找Bug当时想到了以下几种可能
-1.使用的navicat破解版，有Bug
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-11-28
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/MySQL/">
-                            <span class="chip bg-color">MySQL</span>
-                        </a>
-                        
-                        <a href="/tags/bug/">
-                            <span class="chip bg-color">bug</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/29/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%AD%97%E5%85%B8%E5%BA%8F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="字符串字典序">
-                            
-                            <span class="card-title">字符串字典序</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                compareTopublic int compareTo(String anotherString)
-    按字典顺序比较两个字符串。该比较基于字符串中各个字符的 Unicode 值。按字典顺序将此 String 对象表示的字符序列与参
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/29/%E5%88%A4%E6%96%AD%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%98%AF%E5%90%A6%E4%B8%BA%E6%95%B0%E5%AD%97%E4%B8%B2/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="判断字符串是否为数字串">
-                            
-                            <span class="card-title">判断字符串是否为数字串</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                方法使用正则表达式
-代码/**
-     * 判断是否是数字字符串,支持实数.
-     * @param str 目标字符串
-     * @return 是数字字符串返回true,否则返回false
-     */
-    public
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/29/%E5%88%A4%E6%96%AD%E6%95%B0%E5%AD%97%E6%95%B0%E7%BB%84%E6%98%AF%E5%90%A6%E6%9C%89%E5%BA%8F/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="判断数字数组是否有序">
-                            
-                            <span class="card-title">判断数字数组是否有序</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                思路整体有序充要条件是任意多个有序(任意两个有序，相邻两个有序)
-代码public static boolean isAsc(int[] nums)&#123;
-    for (int i = 1; i &lt;= nums.length
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/29/%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B%E6%80%BB%E7%BB%93%E4%B8%80/">
-                        <div class="card-image">
-                            
-                            <img src="https://i.postimg.cc/wx1dP08K/ad98470bde2888bdc5cdcbb359c388cd4bdd08e4.jpg" class="responsive-img" alt="力扣周赛总结一">
-                            
-                            <span class="card-title">力扣周赛总结一</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                第79场双周赛战况
-题目1：6083. 判断一个数的数字计数是否等于数位的值难度：简单
-给你一个下标从0  开始长度为 n的字符串 num ，它只包含数字。
-如果对于 每个 0 &lt;= i &lt; n 的下标 i ，都满足数位 i 在
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-29
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%9B%E6%89%A3%E5%91%A8%E8%B5%9B/">
-                            <span class="chip bg-color">力扣周赛</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A8%A1%E6%8B%9F%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">模拟算法</span>
-                        </a>
-                        
-                        <a href="/tags/%E9%93%BE%E8%A1%A8/">
-                            <span class="chip bg-color">链表</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/24/965-%E5%8D%95%E5%80%BC%E4%BA%8C%E5%8F%89%E6%A0%91/">
-                        <div class="card-image">
-                            
-                            <img src="https://i.postimg.cc/wBp7j8yb/ayqsy-fq983.jpg" class="responsive-img" alt="965.单值二叉树">
-                            
-                            <span class="card-title">965.单值二叉树</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                题目：965. 单值二叉树难度：简单
-  给你一个二叉树的根节点 root ， 检查它是否轴对
-示例 1:
-
-输入：[1,1,1,1,1,null,1]
-输出：true
-
-示例 2:
-
-输入：[2,2,2,5,2]
-输出：false
-
-
-解
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-24
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
-                            <span class="chip bg-color">力扣每日一题</span>
-                        </a>
-                        
-                        <a href="/tags/%E4%BA%8C%E5%8F%89%E6%A0%91/">
-                            <span class="chip bg-color">二叉树</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%B4%AA%E5%BF%83%E7%AE%97%E6%B3%95/">
-                            <span class="chip bg-color">贪心算法</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/22/HelloHexo/">
-                        <div class="card-image">
-                            
-                            <img src="https://i.postimg.cc/dtGgPf5f/9ea2d141aa414685cd538c4519a43b1e19e4e521.jpg" class="responsive-img" alt="Hello Hexo">
-                            
-                            <span class="card-title">Hello Hexo</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-22
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/19/462-%E6%9C%80%E5%B0%91%E7%A7%BB%E5%8A%A8%E6%AC%A1%E6%95%B0%E4%BD%BF%E6%95%B0%E7%BB%84%E5%85%83%E7%B4%A0%E7%9B%B8%E7%AD%89II/">
-                        <div class="card-image">
-                            
-                            <img src="https://i.postimg.cc/hGKKXQ8v/2766e6bae755e84e2536d830b82fe96.jpg" class="responsive-img" alt="462.最少移动次数使数组元素相等II">
-                            
-                            <span class="card-title">462.最少移动次数使数组元素相等II</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                题目：462. 最少移动次数使数组元素相等 II难度：中等
- 给你一个长度为 n 的整数数组 nums ，返回使所有数组元素相等需要的最少移动数。
-在一步操作中，你可以使数组中的一个元素加 1 或者减 1 。
-示例 1:
-输入：nums =
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
-                            <span class="chip bg-color">力扣每日一题</span>
-                        </a>
-                        
-                        <a href="/tags/%E4%B8%AD%E4%BD%8D%E6%95%B0/">
-                            <span class="chip bg-color">中位数</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/17/953-%E9%AA%8C%E8%AF%81%E5%A4%96%E6%98%9F%E8%AF%AD%E8%AF%8D%E5%85%B8/">
-                        <div class="card-image">
-                            
-                            <img src="https://s3.bmp.ovh/imgs/2022/05/23/69b5043ca1686988.jpg" class="responsive-img" alt="953-验证外星语词典">
-                            
-                            <span class="card-title">953-验证外星语词典</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                题目：验证外星语词典难度：简单
-  某种外星语也使用英文小写字母，但可能顺序 order 不同。字母表的顺序（order）是一些小写字母的排列。给定一组用外星语书写的单词 words，以及其字母表的顺序 order，只有当给定的单词在这种外
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-17
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
-                            <span class="chip bg-color">力扣每日一题</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%95%B0%E7%BB%84/">
-                            <span class="chip bg-color">数组</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/">
-                            <span class="chip bg-color">字符串</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/16/%E9%9D%A2%E8%AF%95%E9%A2%9804-06%E5%90%8E%E7%BB%A7%E8%80%85/">
-                        <div class="card-image">
-                            
-                            <img src="https://i.postimg.cc/s2nb3TVj/fe2b7ed8b7572cb64ab2eda70490d0d.jpg" class="responsive-img" alt="面试题04.06后继者">
-                            
-                            <span class="card-title">面试题04.06后继者</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                题目：面试题 04.06. 后继者难度：中等
-  设计一个算法，找出二叉搜索树中指定节点的“下一个”节点（也即中序后继）。
-如果指定节点没有对应的“下一个”节点，则返回null。
-示例 1:
-输入: root = [2,1,3], p = 
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-16
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
-                            <span class="chip bg-color">力扣每日一题</span>
-                        </a>
-                        
-                        <a href="/tags/%E4%BA%8C%E5%8F%89%E6%90%9C%E7%B4%A2%E6%A0%91/">
-                            <span class="chip bg-color">二叉搜索树</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%A0%88/">
-                            <span class="chip bg-color">栈</span>
-                        </a>
-                        
-                        <a href="/tags/%E4%B8%AD%E5%BA%8F%E9%81%8D%E5%8E%86/">
-                            <span class="chip bg-color">中序遍历</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-             <!-- 隐藏某个文章 -->
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2022/05/15/812-%E6%9C%80%E5%A4%A7%E4%B8%89%E8%A7%92%E5%BD%A2%E9%9D%A2%E7%A7%AF/">
-                        <div class="card-image">
-                            
-                            <img src="https://i.postimg.cc/xdzQcGhK/6b81ec1adfcfa265db36d44a6e01d71.jpg" class="responsive-img" alt="812.最大三角形面积">
-                            
-                            <span class="card-title">812.最大三角形面积</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                题目：812. 最大三角形面积难度：简单
-给定包含多个点的集合，从其中取三个点组成三角形，返回能组成的最大三角形的面积
-示例 1:
-输入: points = [[0,0],[0,1],[1,0],[0,2],[2,0]]
-输出: 2
-解释:
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-15
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-user fa-fw"></i>
-                                Lounwb
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%8A%9B%E6%89%A3%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">
-                            <span class="chip bg-color">力扣每日一题</span>
-                        </a>
-                        
-                        <a href="/tags/%E6%9E%9A%E4%B8%BE/">
-                            <span class="chip bg-color">枚举</span>
-                        </a>
-                        
-                        <a href="/tags/%E4%B8%89%E8%A7%92%E5%BD%A2%E9%9D%A2%E7%A7%AF/">
-                            <span class="chip bg-color">三角形面积</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-              <!-- 隐藏某个文章 -->
-            
-        </div>
-    </article>
-
-</main>
-
-
-<div class="container paging">
-    <div class="row">
-        <div class="col s6 m4 l4">
-            
-            <a class="left btn-floating btn-large disabled">
-                <i class="fas fa-angle-left"></i>
-            </a>
-            
-        </div>
-        <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 2</div>
-        </div>
-        <div class="col s6 m4 l4">
-            
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
-                <i class="fas fa-angle-right"></i>
-            </a>
-            
-        </div>
-    </div>
-</div>
-
-
-
-</main>
-
-<footer class="page-footer bg-color">
-    
-        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
-<style>
-    .aplayer .aplayer-lrc p {
-        
-        font-size: 12px;
-        font-weight: 700;
-        line-height: 16px !important;
-    }
-
-    .aplayer .aplayer-lrc p.aplayer-lrc-current {
-        
-        font-size: 15px;
-        color: #42b983;
-    }
-
-    
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
-        left: -66px !important;
-    }
-
-    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
-        left: 0px !important;
-    }
-
-    
-</style>
-<div class="">
-    
-    <div class="row">
-        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
-                   server="netease"
-                   type="playlist"
-                   id="503838841"
-                   fixed='true'
-                   autoplay='false'
-                   theme='#42b983'
-                   loop='all'
-                   order='random'
-                   preload='auto'
-                   volume='0.7'
-                   list-folded='true'
-        >
-        </meting-js>
-    </div>
-</div>
-
-<script src="/libs/aplayer/APlayer.min.js"></script>
-<script src="/libs/aplayer/Meting.min.js"></script>
-
-    
-    <div class="container row center-align"
-         style="margin-bottom: 15px !important;">
-        <div class="col s12 m8 l8 copy-right">
-            Copyright&nbsp;&copy;
-            
-                <span id="year">2022</span>
-            
-            <a href="/about" target="_blank">Lounwb</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            <br>
-            
-            
-            
-                
-            
-            
-                <span id="busuanzi_container_site_pv">
-                &nbsp;|&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;
-                    <span id="busuanzi_value_site_pv" class="white-color"></span>
-            </span>
-            
-            
-                <span id="busuanzi_container_site_uv">
-                &nbsp;|&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;
-                    <span id="busuanzi_value_site_uv" class="white-color"></span>
-            </span>
-            
-            <br>
-
-            <!-- 运行天数提醒. -->
-            
-                <span id="sitetime"> Loading ...</span>
-                <script>
-                    var calcSiteTime = function () {
-                        var seconds = 1000;
-                        var minutes = seconds * 60;
-                        var hours = minutes * 60;
-                        var days = hours * 24;
-                        var years = days * 365;
-                        var today = new Date();
-                        var startYear = "2022";
-                        var startMonth = "5";
-                        var startDate = "10";
-                        var startHour = "0";
-                        var startMinute = "0";
-                        var startSecond = "0";
-                        var todayYear = today.getFullYear();
-                        var todayMonth = today.getMonth() + 1;
-                        var todayDate = today.getDate();
-                        var todayHour = today.getHours();
-                        var todayMinute = today.getMinutes();
-                        var todaySecond = today.getSeconds();
-                        var t1 = Date.UTC(startYear, startMonth, startDate, startHour, startMinute, startSecond);
-                        var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
-                        var diff = t2 - t1;
-                        var diffYears = Math.floor(diff / years);
-                        var diffDays = Math.floor((diff / days) - diffYears * 365);
-
-                        // 区分是否有年份.
-                        var language = 'zh-CN';
-                        if (startYear === String(todayYear)) {
-                            document.getElementById("year").innerHTML = todayYear;
-                            var daysTip = 'This site has been running for ' + diffDays + ' days';
-                            if (language === 'zh-CN') {
-                                daysTip = '本站已运行 ' + diffDays + ' 天';
-                            } else if (language === 'zh-HK') {
-                                daysTip = '本站已運行 ' + diffDays + ' 天';
-                            }
-                            document.getElementById("sitetime").innerHTML = daysTip;
-                        } else {
-                            document.getElementById("year").innerHTML = startYear + " - " + todayYear;
-                            var yearsAndDaysTip = 'This site has been running for ' + diffYears + ' years and '
-                                + diffDays + ' days';
-                            if (language === 'zh-CN') {
-                                yearsAndDaysTip = '本站已运行 ' + diffYears + ' 年 ' + diffDays + ' 天';
-                            } else if (language === 'zh-HK') {
-                                yearsAndDaysTip = '本站已運行 ' + diffYears + ' 年 ' + diffDays + ' 天';
-                            }
-                            document.getElementById("sitetime").innerHTML = yearsAndDaysTip;
-                        }
-                    }
-
-                    calcSiteTime();
-                </script>
-            
-            <br>
-            
-        </div>
-        <div class="col s12 m4 l4 social-link social-statis">
-    <a href="https://github.com/Lounwb" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
-        <i class="fab fa-github"></i>
-    </a>
-
-
-
-    <a href="mailto:1904396849@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
-        <i class="fas fa-envelope-open"></i>
-    </a>
-
-
-
-
-
-
-
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1904396849" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1904396849" data-position="top" data-delay="50">
-        <i class="fab fa-qq"></i>
-    </a>
-
-
-
-
-
-
-
-</div>
-    </div>
-</footer>
-
-<div class="progress-bar"></div>
-
-
-<!-- 搜索遮罩框 -->
-<div id="searchModal" class="modal">
-    <div class="modal-content">
-        <div class="search-header">
-            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
-            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
-                   class="search-input">
-        </div>
-        <div id="searchResult"></div>
-    </div>
-</div>
-
-<script type="text/javascript">
-$(function () {
-    var searchFunc = function (path, search_id, content_id) {
-        'use strict';
-        $.ajax({
-            url: path,
-            dataType: "xml",
-            success: function (xmlResponse) {
-                // get the contents from search data
-                var datas = $("entry", xmlResponse).map(function () {
-                    return {
-                        title: $("title", this).text(),
-                        content: $("content", this).text(),
-                        url: $("url", this).text()
-                    };
-                }).get();
-                var $input = document.getElementById(search_id);
-                var $resultContent = document.getElementById(content_id);
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty titles and contents
-                        if (data_title !== '' && data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i === 0) {
-                                        first_occur = index_content;
-                                    }
-                                }
-                            });
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-                                if (start < 0) {
-                                    start = 0;
-                                }
-                                if (start === 0) {
-                                    end = 100;
-                                }
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-                                var match_content = content.substr(start, end);
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    $resultContent.innerHTML = str;
-                });
-            }
-        });
-    };
-
-    searchFunc('/search.xml', 'searchInput', 'searchResult');
-});
-</script>
-
-<!-- 深色模式按钮 -->
-<a onclick="switchNightMode()" id="sma" title="模式切换">
-    <i class="fa fa-moon" id="nightMode" aria-hidden="true"></i>
-</a>
-<!-- 回到顶部按钮 -->
-<div id="backTop" class="top-scroll">
-    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
-        <i class="fas fa-arrow-up"></i>
-    </a>
-</div>
-
-
-<script type="text/javascript">
-    $.getScript("https://files.islu.cn/static/pjax/pjax.min.js",loadPjax)
-    function loadPjax(){
-        var pjax = new Pjax({
-            selectors: [
-                "head title",
-                'head meta[name="keywords"]',
-                'head meta[name="description"]',
-                "main#main_wrap",
-                "#rightside"
-            ],
-            cache: true,
-            cacheBust: false
-        });
-    }
-
-    // 开始 PJAX 执行的函数
-    document.addEventListener('pjax:send', function () {
-    });
-    // PJAX 完成之后执行的函数，可以和上面的重载放在一起
-    document.addEventListener('pjax:complete', function () {
-        document.querySelectorAll('script[data-pjax]').forEach(item => {
-            const newScript = document.createElement('script')
-            const content = item.text || item.textContent || item.innerHTML || ""
-            Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
-            newScript.appendChild(document.createTextNode(content))
-            item.parentNode.replaceChild(newScript, item)
-        })
-    });
-
-    // Pjax请求错误时，跳转到404页面
-    document.addEventListener('pjax:error', (err) => {
-        if (err.request.status === 404) {
-            pjax.loadUrl('/404.html')
-        }
-    })
-</script>
-
-
-<script src="/libs/materialize/materialize.min.js"></script>
-<script src="/libs/masonry/masonry.pkgd.min.js"></script>
-<script src="/libs/aos/aos.js"></script>
-<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
-<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
-<script src="/js/matery.js"></script>
-
-
-
-
-
-<!-- 雪花特效 -->
-
-
-<!-- 鼠标星星特效 -->
-
-
-
-    <script src="https://ssl.captcha.qq.com/TCaptcha.js"></script>
-    <script src="/libs/others/TencentCaptcha.js"></script>
-    <button id="TencentCaptcha" data-appid="xxxxxxxxxx" data-cbfn="callback" type="button"
-            hidden></button>
-
-
-<!-- Baidu Analytics -->
-
-<!-- Baidu Push -->
-
-<script>
-    (function () {
-        var bp = document.createElement('script');
-        var curProtocol = window.location.protocol.split(':')[0];
-        if (curProtocol === 'https') {
-            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-        } else {
-            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-        }
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script>
-
-
-
-    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
-
-
-
-
-
-
-<!--腾讯兔小巢-->
-
-
-
-
-
-
-
-
-    <script src="/libs/instantpage/instantpage.js" type="module"></script>
-
-
+    <!-- load javascript last -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
-
 </html>
