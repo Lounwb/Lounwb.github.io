@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link href="/css/latofonts.css" rel="stylesheet" type="text/css">
-    <link href="/css/latolatinfonts.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="http://www.uestc.edu.cn/favicon.ico">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="./assets/css/latofonts.css"type="text/css">
+    <link rel="stylesheet" href="./assets/css/latolatinfonts.css" type="text/css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
+    <link rel="shortcut icon" href="./assets/imgs/favicon.ico">
     <!--<link href="/css/index.css" rel="stylesheet">-->
     <script type="text/javascript"> 
         function loadcss(url) {
@@ -22,9 +22,9 @@
             return link;
         }
         if(navigator.appVersion.indexOf("Win")!=-1) {
-            loadcss("css/win-index.css");
+            loadcss("./assets/css/win-index.css");
         }else {
-            loadcss("css/index.css");
+            loadcss("./assets/css/index.css");
         }
     </script>
 </head>
@@ -90,20 +90,32 @@
 
                 <h4 id="honors">Honors</h4>
                 <ul>
-                    <li>The First Prize Scholarship, University of Electronic Science and Technology of China (2022)</li>
+                    <li>The received Scholarship, University of Electronic Science and Technology of China</li>
+                    <span class="pub">
+                        <a href="./files/scholarship_student_2021.pdf" style="margin-right: 30px;"><i class="fa fa-institution" aria-hidden="true"></i> Excellent Student Scholarship (2021-2022)</a></br>
+                        <a href="./files/scholarship_student_2022.pdf" style="margin-right: 30px;"><i class="fa fa-institution" aria-hidden="true"></i> Excellent Student Scholarship (2022-2023)</a></br>
+                        <a href="./files/scholarship_huameng.pdf" style="margin-right: 30px;"><i class="fa fa-institution" aria-hidden="true"></i> Huameng Enterprise Scholarship (2023)</a></br>
+                        <a href="./files/scholarship_yinxing.pdf" style="margin-right: 30px;"><i class="fa fa-institution" aria-hidden="true"></i> Yinxing Enterprise Scholarship (2023)</a> </br>
+                    </span>
                 </ul>
                 <ul>
                     <li>The 12th China Software Cup College Student Software Design Competition (2023)</li>
                     
                     <span class="pub">
-                        <a href="/files/11014144-3b7579e59265e737.pdf" style="margin-right: 30px;"><i class="fa fa-trophy" aria-hidden="true"></i> First Prize in Western Region</a> 
-                        <a href="/files/11014144-26204aa4f11b9e32.pdf"><i class="fa fa-trophy" aria-hidden="true"></i> National Third Prize</a> 
+                        <a href="./files/11014144-3b7579e59265e737.pdf" style="margin-right: 30px;"><i class="fa fa-trophy" aria-hidden="true"></i> First Prize in Western Region</a> 
+                        <a href="./files/11014144-26204aa4f11b9e32.pdf"><i class="fa fa-trophy" aria-hidden="true"></i> National Third Prize</a> 
+                    </span>
+                </ul>
+                <ul>
+                    <li>The 15th China University Student Service Outsourcing Innovation and Entrepreneurship Competition (2024)</li>
+                    <span class="pub">
+                        <a href="./files/fwwbcxcyds.pdf" style="margin-right: 30px;"><i class="fa fa-trophy" aria-hidden="true"></i> Third Prize in Western Region</a> 
                     </span>
                 </ul>
             </div>
                
             <div class="col-sm-4 col-md-4">
-                <img src="/img/LiTianyu.png" class="img-thumbnail" alt="Tianyu Li">
+                <img src="./assets/imgs/LiTianyu.png" class="img-thumbnail" alt="Tianyu Li">
                 <br/>   
                 <br/>
                 <p class="text-justify">
@@ -164,10 +176,11 @@
             </ul>
         </div> -->
         <div>
-            <strong>Southwest Petroleum University</strong> — Chengdu, China<br/>
-            Transferable Adversarial Attack samples — 2023.07 -<br/>
+            <strong><a href="http://www.cdipcc.com.cn/">Information of Physics Computation Center (IPCC) of UESTC</a></strong> — Chengdu, China<br/>
+            Transferable Adversarial Attacks — 2023.07 -<br/>
             <ul>
                 <li>Mentor: <a href="https://www.swpu.edu.cn/scs/info/1169/4798.htm">Dr. Desheng Zheng</a></li>
+                <li>For image classification networks, improve the transferability of adversarial examples on black-box models.</li>
             </ul>
 
         </div>
@@ -177,11 +190,40 @@
             <ul>
                 <li>Supervisor: <a href="https://sise.uestc.edu.cn/info/1037/5735.htm">Shuhua Wen</a></li>
                 <li>Implement a conference room system that allows online subscription, offline facial recognition check-in, and access control</li>
-                <li>Including raspberry pie front end, Android end, web Frontend and backend which uses face_recognition, Vue, SpringBoot, MyBatis, Redis and etc.</li>
+                <li>Including raspberry pie front end, Android end, web Frontend and backend which uses PyQt, Vue, SpringBoot, MyBatis, Redis and etc.</li>
             </ul>
 
         </div>
         <h3 id="publications">Publications</h3>
+        <h4 id="journal-papers">Journal Papers</h4>
+        <ul>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="#" class="pub-title">Improving the Transferability of Adversarial Examples with Path tuning</a>
+                    </strong><br/>
+                    Tianyu Li, Xiaoyu Li, Wuping Ke, Xuwei Tian, Desheng Zheng, Chao Lu<br/>
+                    <span class="venue"><a href="https://link.springer.com/journal/10489">Applied Intelligence</a></span> — (2024): 168192 doi:10.1016/j.nima.2023.168192<br/>
+                    <span class="pub">
+                        <a href="./files/als2023.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://www.sciencedirect.com/science/article/pii/S0168900223001821"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+            <li>
+                <div class="pub">
+                    <strong>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705124005434" class="pub-title">Improving the Transferability of Adversarial Examples through Neighborhood Attribution</a>
+                    </strong><br/>
+                    Wuping Ke, Desheng Zheng, Xiaoyu Li, Yuanhang He, Tianyu Li, Fan Min<br/>
+                    <span class="venue"><a href="https://www.sciencedirect.com/journal/knowledge-based-systems">Knwoledge-Bases Systems</a></span> — (2024): 168192 doi:10.1016/j.knosys.2024.111909<br/>
+                    <span class="pub">
+                        <a href="./files/Improving the Transferability of Adversarial Examples through Neighborhood.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0950705124005434"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
+                    </span>
+                </div>
+            </li>
+        </ul>
 
         <!-- <h4 id="conference-papers">Conference Papers</h4> -->
         <!-- <ul>
@@ -237,63 +279,7 @@
                     </span>
                 </div>
             </li>
-        </ul>
-
-        <h4 id="journal-papers">Journal Papers</h4>
-        <ul>
-            <li>
-                <div class="pub">
-                    <strong>
-                        <a href="#" class="pub-title">Demonstration of Machine Learning-enhanced Multiobjective Optimization of Ultrahigh-brightness Lattices for Fourth-generation Synchrotron Light Sources</a>
-                    </strong><br/>
-                    Yuping Lu, Simon C. Leemann, Changchun Sun, Michael P. Ehrlichman, Hiroshi Nishimura, Marco Venturini, Thorsten Hellert<br/>
-                    <span class="venue"><a href="https://www.sciencedirect.com/science/article/pii/S0168900223001821">Nuclear Inst. and Methods in Physics Research, A</a></span> — (2023): 168192 doi:10.1016/j.nima.2023.168192<br/>
-                    <span class="pub">
-                        <a href="/files/als2023.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
-                        <a href="https://www.sciencedirect.com/science/article/pii/S0168900223001821"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
-                    </span>
-                </div>
-            </li>
-            <li>
-                <div class="pub">
-                    <strong>
-                        <a href="/files/biclique.pdf" class="pub-title">Biclique: Maximal Biclique Enumeration in Bipartite Graphs</a>
-                    </strong><br/>
-                    Yuping Lu, Charles A. Phillips, Michael A. Langston<br/>
-                    <span class="venue"><a href="https://bmcresnotes.biomedcentral.com/">BMC Research Notes</a></span> — 13, 88 (2020) doi:10.1186/s13104-020-04955-0<br/>
-                    <span class="pub">
-                        <a href="/files/biclique.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
-                        <a href="https://bmcresnotes.biomedcentral.com/articles/10.1186/s13104-020-04955-0"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
-                    </span>
-                </div>
-              </li>
-              <li>
-                <div class="pub">
-                    <strong>
-                        <a href="/files/robust.pdf" class="pub-title">A Robustness Metric for Biological Data Clustering Algorithms</a>
-                    </strong><br/>
-                    Yuping Lu, Charles A. Phillips, Michael A. Langston<br/>
-                    <span class="venue"><a href="https://bmcbioinformatics.biomedcentral.com/">BMC Bioinformatics</a></span> — 20, 503 (2019) doi:10.1186/s12859-019-3089-6<br/>
-                    <span class="pub">
-                        <a href="/files/robust.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
-                        <a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-019-3089-6"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
-                    </span>
-                </div>
-              </li>
-              <li>
-                <div class="pub">
-                    <strong>
-                        <a href="/files/mpmi-05-11-0106.pdf" class="pub-title">Digital Gene Expression Profiling of the Phytophthora Sojae Transcriptome</a>
-                    </strong><br/>
-                    Wenwu Ye, Xiaoli Wang, Kai Tao, Yuping Lu, Tingting Dai, Suomeng Dong, Daolong Dou, Mark Gijzen, Yuanchao Wang<br/>
-                    <span class="venue"><a href="http://apsjournals.apsnet.org/loi/mpmi">Molecular Plant-Microbe Interactions</a></span> — 24(12):1530–1539, December 2011<br/>
-                    <span class="pub">
-                        <a href="/files/mpmi-05-11-0106.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i> Paper</a> | 
-                        <a href="http://apsjournals.apsnet.org/doi/abs/10.1094/MPMI-05-11-0106"><i class="fa fa-globe" aria-hidden="true"></i> Web</a> 
-                    </span>
-                </div>
-            </li>
-        </ul> -->
+        </ul>-->
 
         <!-- <h4 id="posters">Posters & Short Papers</h4> -->
         <!-- <ul>
@@ -457,7 +443,7 @@
     </div>
 
     <!-- load javascript last -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
 </body>
 </html>
